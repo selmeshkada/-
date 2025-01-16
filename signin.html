@@ -51,7 +51,30 @@
 
     <!-- Контент страницы -->
     <main>
-        <h1>Добро пожаловать на страницу регистрации!!!</h1>
+        <h1>
+            Добро пожаловать!
+        </h1>
+        <h2>
+            Регистрация
+        </h2>
+        <div class="login-form">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Введите номер телефона</legend>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="+79999999999" autocomplete="off"
+                            required>
+                    </div>
+
+                    <legend>Придумайте пароль (8 символов)</legend>
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" placeholder="00000000" autocomplete="off"
+                            required>
+                    </div>
+                </fieldset>
+                <button type="submit"><i class="fa fa-user"></i> Зарегистрироваться</button>
+            </form>
+        </div>
     </main>
 </body>
 
