@@ -1,7 +1,85 @@
-body {
-    font-family: "Playfair Display", "Arial", serif;
-    font-weight: 700;
-    font-size: large;
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Playfair Display", sans-serif;
+    background-color: #f4f4f4;
+}
 
+/* Навигация */
+.navbar {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fcfcfc;
+    color: rgb(0, 0, 0);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    z-index: 999;
+    box-shadow: 5px 5px 8px 5px rgba(80, 34, 34, 0.2);
+    transform: translateY(10px);
+}
+
+.signin,
+.social a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.signin img {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 30px;
+    /* Установим фиксированный размер для иконки пользователя */
+}
+
+.icon {
+    flex-grow: 1;
+    /* Позволяет занять доступное пространство между элементами */
+    text-align: center;
+    /* Центрирование по горизонтали */
+    align-self: flex-end;
+    position: relative;
+    left: 50px;
+}
+
+.icon img {
+    width: 50px;
+    /* Размер логотипа */
+}
+
+.social {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.social li {
+    margin-right: 15px;
+}
+
+.social div {
+    display: inline-block;
+}
+
+.social img {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 25px;
+    /* Установим фиксированный размер для иконок соц.сетей */
+}
+
+/* Стилизация контента */
+main {
+    padding-top: 100px;
+    /* Чтобы компенсировать высоту фиксированного nav */
+    text-align: center;
+}
