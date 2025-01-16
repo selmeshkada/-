@@ -82,6 +82,7 @@ main {
     padding-top: 200px;
     /* Чтобы компенсировать высоту фиксированного nav */
     text-align: center;
+    padding-bottom: 100px;
 }
 
 h2 {
@@ -94,7 +95,7 @@ form {
     height: 280px;
     margin: auto;
     padding: 30px;
-    border: 1px solid #4e0000;
+    border: 1px solid #AA0000;
     border-radius: 5px;
 }
 
@@ -102,7 +103,7 @@ fieldset {
     margin-bottom: 10px;
     padding: 10px;
     border: none;
-    border-top: 1px solid #4e0000;
+    border-top: 1px solid #AA0000;
 }
 
 legend {
@@ -115,7 +116,7 @@ legend {
 }
 
 button {
-    background-color: #4e0000;
+    background-color: #AA0000;
     /* Цвет кнопки */
     border: none;
     color: white;
@@ -132,5 +133,37 @@ button {
 button:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    border: 2px solid #4e0000;
+    border: 2px solid #AA0000;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #AA0000;
+}
+
+footer .icon {
+    left: 10px;
+    align-self: flex-start;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #000000;
+    transition-property: color;
+    transition-duration: .3s;
+}
+
+.footer-elements-top-20px {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
