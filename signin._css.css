@@ -1,0 +1,9 @@
+body {
+    font-family: "Playfair Display", "Arial", serif;
+    font-weight: 700;
+    font-size: large;
+}
+
+.signin img {
+    size: 20px;
+}
