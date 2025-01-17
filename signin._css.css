@@ -1,9 +1,15 @@
-/* Общие стили */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body,
+html {
+    height: 100%;
+}
+
 
 body {
     font-family: "Playfair Display", sans-serif;
@@ -28,9 +34,13 @@ body {
     transform: translateY(10px);
 }
 
-.signin,
-.social a {
+nav a {
     color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #AA0000;
     text-decoration: none;
 }
 
@@ -48,7 +58,7 @@ nav .icon {
     /* Центрирование по горизонтали */
     align-self: flex-end;
     position: relative;
-    left: 50px;
+    left: 60px;
 }
 
 .icon img {
@@ -79,6 +89,7 @@ nav .icon {
 
 /* Стилизация контента */
 main {
+    flex-grow: 1;
     padding-top: 200px;
     /* Чтобы компенсировать высоту фиксированного nav */
     text-align: center;
@@ -160,10 +171,12 @@ footer {
     height: 70px;
     padding-left: 20px;
     padding-bottom: 20px;
-    background-size: contain; /* Подгоняем фоновое изображение под размеры блока */
+    background-size: contain;
+    /* Подгоняем фоновое изображение под размеры блока */
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer; /* Курсор в виде руки при наведении */
+    cursor: pointer;
+    /* Курсор в виде руки при наведении */
 }
 
 .icon-container::before {
@@ -171,15 +184,18 @@ footer {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("png/white-icon-512x512.png"); /* Оригинальное изображение */
+    background-image: url("png/white-icon-512x512.png");
+    /* Оригинальное изображение */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: opacity 0.3s ease-in-out; /* Плавный переход */
+    transition: opacity 0.3s ease-in-out;
+    /* Плавный переход */
 }
 
 .icon-container:hover::before {
-    opacity: 0; /* Прозрачность для скрытия оригинального изображения */
+    opacity: 0;
+    /* Прозрачность для скрытия оригинального изображения */
 }
 
 .icon-container:hover::after {
@@ -187,11 +203,13 @@ footer {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("png/apple-touch-icon.png"); /* Новое изображение */
+    background-image: url("png/apple-touch-icon.png");
+    /* Новое изображение */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: opacity 0.3s ease-in-out; /* Плавный переход */
+    transition: opacity 0.3s ease-in-out;
+    /* Плавный переход */
 }
 
 footer li {
@@ -214,4 +232,6 @@ footer a:hover {
     padding-bottom: 20px;
     display: grid;
     grid-template-columns: auto auto auto;
+    align-items: center;
+    grid-auto-flow: column;
 }
