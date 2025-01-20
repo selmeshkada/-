@@ -235,3 +235,58 @@ footer a:hover {
     align-items: center;
     grid-auto-flow: column;
 }
+
+@media (max-width: 780px) {
+
+    *:not(nav) {
+        font-size: 12px;
+    }
+
+    main {
+        padding-top: 50px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    form {
+        width: fit-content;
+        height: auto;
+    }
+
+    .login-form {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .footer-elements-top-20px {
+        gap: 10px;
+    }
+}
+
+/* Другое устройство */
+@media (max-width: 412px) {
+    
+    *:not(nav) {
+        font-size: 12px;
+    }
+
+    main {
+        padding-top: 100px;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    form {
+        width: fit-content;
+        height: auto;
+    }
+
+    .login-form {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .footer-elements-top-20px {
+        gap: 10px;
+    }
+}

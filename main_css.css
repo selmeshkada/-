@@ -85,7 +85,7 @@ nav .icon {
 /* Основной контент */
 main {
     flex-grow: 1;
-    padding-top: 200px;
+    padding-top: 100px;
     text-align: center;
     padding-bottom: 100px;
 }
@@ -188,34 +188,7 @@ main {
     width: 30%;
     object-fit: cover;
     border: 2px solid #000000;
-    transition: filter 0.3s ease; 
 }
-
-.overlay {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7); /* Затемнение */
-    opacity: 0; /* Изначально невидимо */
-    transition: opacity 0.3s ease; /* Анимация появления */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    text-align: center;
-}
-
-.overlay span {
-    padding: 5px; /* Дополнительные отступы для текста */
-}
-
-[attr="primer1"]:hover {
-    filter: brightness(50%);
-}
-
-[attr="primer1"]:hover .overlay {
-    opacity: 1;
-}
-
 
 /* 4 фрейм основного контента */
 .ostavte-zayavku {
@@ -224,6 +197,7 @@ main {
     gap: 20px;
     justify-content: center;
 }
+
 .ostavte-zayavku button {
     background-color: #AA0000;
     border: none;
@@ -318,4 +292,58 @@ footer a:hover {
     grid-template-columns: auto auto auto;
     align-items: center;
     grid-auto-flow: column;
+}
+
+@media (max-width: 780px) {
+
+    *:not(nav) {
+        font-size: 12px;
+    }
+
+    .container-main {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .frame-three {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .frame-one,
+    .frame-three,
+    .ostavte-zayavku {
+        padding: 20px;
+    }
+
+    .footer-elements-top-20px {
+        gap: 10px;
+    }
+}
+
+/* Другое устройство */
+@media (max-width: 412px) {
+    *:not(nav) {
+        font-size: 12px;
+    }
+
+    .container-main {
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .frame-three {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .frame-one,
+    .frame-three,
+    .ostavte-zayavku {
+        padding: 10px;
+    }
+
+    .footer-elements-top-20px {
+        gap: 10px;
+    }
 }
