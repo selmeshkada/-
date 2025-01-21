@@ -19,14 +19,13 @@
 
 <body>
     <nav class="navbar">
-        <a href="signin.html" class="signin" target="_blank">
-            <img src="png/user.png" alt="user">
-            Ателье "Одежда"
-        </a>
         <div class="icon">
             <img src="png/android-chrome-192x192.png" alt="icon192">
+            <p>Ателье "Одежда"</p>
         </div>
 
+
+        <!-- Иконки социальных сетей -->
         <ul class="social">
             <li><a href="mailto:daramineeva345@gmail.com" target="_blank">
                     <div class="email">
@@ -48,6 +47,7 @@
                 </a></li>
         </ul>
     </nav>
+
     <main>
 
         <div class="container-main">
@@ -56,9 +56,18 @@
                 <div class="text">
                     <p>Искусство шитья – ваш стиль в каждом изделии!</p>
                 </div>
+
                 <div class="images">
-                    <img src="png/slot.png" alt="slot" class="one">
-                    <img src="png/slot2.jpg" alt="slot2" class="two">
+                    <div class="item image-one">
+                        <div><img src="png/slot.png" alt="banner"></div>
+                        <div class="title">Качественное оборудование</div>
+                    </div>
+                    <div class="item image-two">
+                        <div><img src="png/slot2.jpg" alt="banner"></div>
+                        <div class="title">Команда профессионалов</div>
+                    </div>
+                    <!-- <img src="png/slot.png" alt="slot" class="one">
+                    <img src="png/slot2.jpg" alt="slot2" class="two"> -->
                 </div>
             </div>
 
@@ -73,16 +82,27 @@
             <p>НАШИ РАБОТЫ</p>
 
             <div class="frame-three">
-                <img attr="primer1" src="png/rimer1.jpg" alt="1">
-                <img attr="primer2" src="png/rimer2.jpg" alt="2">
-                <img attr="primer3" src="png/rimer3.jpg" alt="3">
+                <div class="item one">
+                    <div><img src="png/rimer1.jpg" alt="1"></div>
+                    <div class="title">Широкие летние штаны</div>
+                </div>
+                <div class="item two">
+                    <div><img src="png/rimer2.jpg" alt="2"></div>
+                    <div class="title">Топ на завязках</div>
+                </div>
+                <div class="item three">
+                    <div><img src="png/rimer3.jpg" alt="3"></div>
+                    <div class="title">Кофта "Летучая мышь"</div>
+                </div>
             </div>
 
             <div class="ostavte-zayavku">
                 <p>Оставьте заявку на бесплатную консультацию мастера</p>
+                <p>Вы получите доступ к каталогу товаров!</p>
                 <form action="signin.html" method="post">
                     <button>Оставить заявку</button>
                 </form>
+
             </div>
 
         </div>
