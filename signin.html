@@ -20,14 +20,11 @@
 <body>
     <nav class="navbar">
         <!-- Значок входа -->
-        <a href="main_page.html" class="signin" target="_blank">
-            <img src="png/back.png" alt="user">
-            Ателье "Одежда"
-        </a>
-        <!-- Логотип сайта -->
         <div class="icon">
             <img src="png/android-chrome-192x192.png" alt="icon192">
+            <p>Ателье "Одежда"</p>
         </div>
+
 
         <!-- Иконки социальных сетей -->
         <ul class="social">
@@ -55,28 +52,46 @@
 
     <!-- Контент страницы -->
     <main>
-        <h1>
-            Добро пожаловать!
-        </h1>
-        <h2>
-            Регистрация
-        </h2>
+        <div class="text-main">
+            <div class="zagolovok">
+                <p>Добро пожаловать!</p>
+            </div>
+            <div class="registr">
+                <p>Регистрация</p>
+            </div>
+        </div>
         <div class="login-form">
             <form action="catalog.html" method="post">
                 <fieldset>
+                    <legend>Введите имя</legend>
+                    <div class="form-group">
+                        <input type="name" id="name" placeholder="Ваше имя" autocomplete="off" required>
+                    </div>
                     <legend>Введите номер телефона</legend>
                     <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="+79999999999" autocomplete="off"
-                            required>
+                        <input type="tel" id="phone" placeholder="+79999999999" autocomplete="off" required>
                     </div>
 
-                    <legend>Придумайте пароль (8 символов)</legend>
+                    <legend>Укажите почту </legend>
                     <div class="form-group">
-                        <input type="password" id="password" name="password" placeholder="00000000" autocomplete="off"
-                            required>
+                        <input type="email" id="email" autocomplete="off" required>
                     </div>
                 </fieldset>
-                <button type="submit"><i class="fa fa-user"></i> Зарегистрироваться</button>
+                <fieldset class="type-of-question">
+                    <legend>Укажите тип обращения</legend>
+                    <div class="check">
+                        <label>
+                            <input type="checkbox" name="checked" value="1"><span>Ремонт одежды</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checked" value="2"><span>Пошив новой одежды</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checked" value="3"><span>Хочу работать в ателье</span>
+                        </label>
+                    </div>
+                </fieldset>
+                <button type="submit"><i class="fa fa-user"></i>Записаться на бесплатную консультацию мастера</button>
             </form>
         </div>
     </main>
