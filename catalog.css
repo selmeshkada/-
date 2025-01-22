@@ -18,6 +18,21 @@ body {
     background-color: #d7bfbf;
 }
 
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: #18191c00;
+    background: #10f3af00;
+    transform: translateY(-100%);
+  }
+
+.skip-link:focus {
+    transform: translateY(20%);
+}
+
 /* Шапка */
 .navbar {
     margin: 0 auto;
@@ -35,6 +50,11 @@ body {
     z-index: 999;
     box-shadow: 5px 5px 8px 5px rgba(80, 34, 34, 0.2);
     transform: translateY(10px);
+}
+
+
+#nav-title {
+    font-size: 2rem;
 }
 
 nav a {
@@ -136,7 +156,7 @@ main {
     color: rgb(254, 254, 254);
     z-index: 2;
     vertical-align: top;
-    font-size: 24px;
+    font-size: 2rem;
     background-color: #fdfdfdfe;
     color: transparent;
     background-clip: text;
@@ -152,7 +172,7 @@ main {
 /* 2 фрейм основного контента */
 .frame-two p {
     padding-top: 5%;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 /* 3 фрейм основного контента */
@@ -185,13 +205,13 @@ main {
 }
 
 .title {
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
 /* 4 фрейм основного контента */
 .ostavte-zayavku {
-    font-size: 40px;
+    font-size: 2rem;
     display: grid;
     gap: 20px;
     justify-content: center;
@@ -205,7 +225,7 @@ main {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -295,16 +315,16 @@ footer a:hover {
 
 
 @media (max-width: 780px) {
-
-    .navbar,
-    .frame-two,
-    .frame-three {
-        font-size: 12px;
+    #nav-title {
+        font-size: 1.5rem;
+    }
+    *:not(nav) {
+        font-size: 1rem;
     }
 
-
     .container-main {
-        padding: 60px;
+        padding: 20px;
+        padding-top: 100px;
         justify-content: center;
     }
 
@@ -316,7 +336,7 @@ footer a:hover {
 
     .bgvideo {
         height: 20vh;
-        width: 100%;
+        width: 700px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -325,7 +345,7 @@ footer a:hover {
 
     .bgvideo video {
         height: 20vh;
-        width: 100%;
+        width: 700px;
         position: absolute;
         top: 0;
         left: 0;
@@ -335,7 +355,7 @@ footer a:hover {
 
     .effect {
         height: 20vh;
-        width: 100%;
+        width: 700px;
         position: absolute;
         top: 0;
         left: 0;
@@ -345,23 +365,21 @@ footer a:hover {
     }
 
     .video-text {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .frame-three {
-        display: grid;
-        grid-template-columns: repeat(auto, minmax(200px, 1fr));
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center
     }
-
+    
     .item img {
         width: 100%;
         height: 200px;
         object-fit: cover;
         margin-bottom: 5px;
-        border: 1px solid #000000;
-        width: 100%;
-        height: 400px;
+        border: 1px solid #000000;      
     }
 
     .footer-elements-top-20px {
@@ -375,7 +393,7 @@ footer a:hover {
     .navbar,
     .frame-two,
     .frame-three {
-        font-size: 12px;
+        font-size: 0.5rem;
     }
 
 
@@ -422,7 +440,7 @@ footer a:hover {
     }
 
     .video-text {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .frame-three {

@@ -67,7 +67,8 @@
  ```
 
 ![goodmens](/png/good-mens.png) [goodmens](https://good-mens.com/)
-Шапка имеет тень. Свойство - box-shadow. Шапка зафиксирована. Свойство - position: fixed
+
+шапка имеет тень. Свойство - box-shadow. Шапка зафиксирована. Свойство - position: fixed
  ```
  header {
     position: fixed;
@@ -283,7 +284,7 @@ header {
 ```
 
 ![sela](/png/sela.png) [sela](https://www.sela.ru/)
-Шапка. Элемнты располагаются в одной колонне
+Шапка. Элементы располагаются в одной колонне
 ```
 .header__menu {
     flex-direction: column;
